@@ -1,0 +1,16 @@
+// increment function
+int inc(int n) {
+    return n + 1;
+}
+// Program with multiple functions
+int add(int a) {
+    return a + 10;
+}
+/* square function */
+int sqr(int x) {
+    return x * x;
+}
+// decrement function
+int dec(int n) {
+    return n - 1;
+}

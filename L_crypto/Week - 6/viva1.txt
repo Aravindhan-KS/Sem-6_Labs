@@ -1,0 +1,203 @@
+## 1️⃣ **RSA Algorithm**
+
+### **Full form**
+
+**Rivest–Shamir–Adleman**
+
+### **What it does**
+
+* Encrypts and decrypts data using **public and private keys**
+
+### **Type**
+
+* **Asymmetric (Public Key) Cryptography**
+
+### **Where it is used**
+
+* Secure data transmission
+* Digital signatures
+* HTTPS, SSL/TLS, secure emails
+
+### **How it works (in simple words)**
+
+* Two large prime numbers are chosen
+* A public key is generated for encryption
+* A private key is generated for decryption
+* Message encrypted with public key can be decrypted **only** using private key
+
+### **Why it is secure**
+
+* Very hard to factor large numbers into primes
+
+### **Viva one-liner**
+
+👉 “RSA uses two keys and is based on the difficulty of prime factorization.”
+
+---
+
+## 2️⃣ **Diffie–Hellman Key Exchange**
+
+### **Full form**
+
+* Named after **Whitfield Diffie** and **Martin Hellman**
+
+### **What it does**
+
+* Securely **shares a secret key** between two users
+
+### **Type**
+
+* **Asymmetric cryptography**
+
+### **Where it is used**
+
+* Establishing secure sessions
+* VPNs, HTTPS, secure communication
+
+### **How it works**
+
+* Both users agree on public values
+* Each user selects a private key
+* They exchange public keys
+* Both compute the same secret key independently
+
+### **Important point**
+
+* **No secret key is transmitted**
+
+### **Viva one-liner**
+
+👉 “Diffie–Hellman is used for secure key exchange, not for encryption.”
+
+---
+
+## 3️⃣ **Miller–Rabin Primality Test**
+
+### **Full form**
+
+* Named after **Gary Miller** and **Michael Rabin**
+
+### **What it does**
+
+* Checks whether a number is **prime or composite**
+
+### **Type**
+
+* **Probabilistic algorithm**
+
+### **Where it is used**
+
+* RSA key generation
+* Cryptographic prime number testing
+
+### **How it works**
+
+* Uses modular exponentiation
+* Tests number using random values
+* Repeats test multiple times to reduce error
+
+### **Accuracy**
+
+* Not 100% sure, but **very high probability**
+
+### **Viva one-liner**
+
+👉 “Miller–Rabin is a fast probabilistic test to check large prime numbers.”
+
+---
+
+## 4️⃣ **Euclid’s Algorithm**
+
+### **Full form**
+
+* Named after **Euclid**, Greek mathematician
+
+### **What it does**
+
+* Finds the **Greatest Common Divisor (GCD)** of two numbers
+
+### **Type**
+
+* Deterministic algorithm
+
+### **Where it is used**
+
+* Cryptography
+* Mathematics
+* Checking coprime numbers in RSA
+
+### **How it works**
+
+* Repeatedly replaces:
+  `gcd(a, b) = gcd(b, a mod b)`
+* Stops when remainder becomes zero
+
+### **Why it is efficient**
+
+* Reduces numbers quickly
+
+### **Viva one-liner**
+
+👉 “Euclid’s algorithm efficiently computes the GCD using modulo operation.”
+
+---
+
+## 5️⃣ **Extended Euclidean Algorithm**
+
+### **Full form**
+
+* Extension of Euclid’s Algorithm
+
+### **What it does**
+
+* Finds GCD **and** integers `x` and `y` such that
+  `ax + by = gcd(a, b)`
+
+### **Type**
+
+* Deterministic algorithm
+
+### **Where it is used**
+
+* Finding **modular inverse**
+* RSA private key calculation
+
+### **How it works**
+
+* Applies Euclid’s algorithm recursively
+* Back-substitutes to compute `x` and `y`
+
+### **Key condition**
+
+* Modular inverse exists only if `gcd = 1`
+
+### **Viva one-liner**
+
+👉 “Extended Euclid is used to find modular inverse in RSA.”
+
+---
+
+# ⚡ VERY COMMON TRIVIAL / TRICK VIVA QUESTIONS
+
+**Q. Which algorithms use prime numbers?**
+👉 RSA, Diffie–Hellman, Miller–Rabin
+
+**Q. Which algorithm is probabilistic?**
+👉 Miller–Rabin
+
+**Q. Which algorithm is fastest?**
+👉 Euclid’s Algorithm
+
+**Q. Which algorithm generates keys?**
+👉 Diffie–Hellman (shared key), RSA (public/private key)
+
+**Q. Difference between RSA and DH?**
+👉 RSA encrypts data, DH exchanges keys
+
+---
+
+* **RSA** → Encrypt/Decrypt
+* **DH** → Share secret key
+* **Miller–Rabin** → Check prime
+* **Euclid** → GCD
+* **Extended Euclid** → Modular inverse

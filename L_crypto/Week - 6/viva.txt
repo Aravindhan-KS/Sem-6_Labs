@@ -1,0 +1,165 @@
+# 🔐 CRYPTOGRAPHY LAB – VIVA BASICS
+
+
+## 1️⃣ **RSA Algorithm (Public Key Cryptography)**
+
+### **Basics (What to say in viva)**
+
+* RSA is an **asymmetric (public key) cryptosystem**
+* Uses **two keys**: public key for encryption, private key for decryption
+* Security is based on **difficulty of factoring large prime numbers**
+* Uses **modular exponentiation**
+
+### **Key Terms**
+
+* `p, q` → large prime numbers
+* `n = p × q`
+* `φ(n) = (p−1)(q−1)`
+* `e` → public key exponent
+* `d` → private key exponent
+
+### **Why RSA is secure?**
+
+👉 Because **factoring `n` into `p` and `q` is computationally hard**
+
+---
+
+### **Viva Questions (RSA)**
+
+**Q1. Is RSA symmetric or asymmetric?**
+👉 Asymmetric
+
+**Q2. What is the role of φ(n)?**
+👉 Used to generate the private key
+
+**Q3. Can we use small primes in real RSA?**
+👉 No, only for learning; real RSA uses very large primes
+
+**Q4. Which key is shared publicly?**
+👉 Public key `(e, n)`
+
+---
+
+## 2️⃣ **Diffie–Hellman Key Exchange**
+
+### **Basics**
+
+* Used to **securely exchange a secret key**
+* Does **not encrypt messages**
+* Works over an **insecure channel**
+* Based on **discrete logarithm problem**
+
+### **Key Idea**
+
+Even if an attacker knows `p`, `g`, `A`, `B`, they **cannot compute the shared key**
+
+---
+
+### **Viva Questions (DH)**
+
+**Q1. What is the purpose of Diffie–Hellman?**
+👉 Secure key exchange
+
+**Q2. Is the shared key transmitted?**
+👉 No, it is computed independently
+
+**Q3. What kind of cryptography is this?**
+👉 Asymmetric
+
+**Q4. Who are the two users usually called?**
+👉 Alice and Bob
+
+---
+
+## 3️⃣ **Miller–Rabin Primality Test**
+
+### **Basics**
+
+* A **probabilistic** primality test
+* Says **“probably prime”**, not 100% sure
+* Faster than trial division for large numbers
+* Used in **RSA key generation**
+
+### **Why probabilistic?**
+
+👉 Multiple random checks reduce error probability
+
+---
+
+### **Viva Questions (Miller–Rabin)**
+
+**Q1. Is Miller–Rabin deterministic?**
+👉 No, probabilistic
+
+**Q2. Where is it used?**
+👉 Checking large primes in RSA
+
+**Q3. What does “composite” mean?**
+👉 Not a prime number
+
+**Q4. Why not use trial division?**
+👉 Too slow for large numbers
+
+---
+
+## 4️⃣ **Euclid’s Algorithm (GCD)**
+
+### **Basics**
+
+* Used to find **Greatest Common Divisor (GCD)**
+* Based on:
+  `gcd(a, b) = gcd(b, a mod b)`
+* Very **fast and efficient**
+
+---
+
+### **Viva Questions (GCD)**
+
+**Q1. What is GCD?**
+👉 Largest number that divides both numbers
+
+**Q2. Why is Euclid’s algorithm efficient?**
+👉 Reduces problem size at each step
+
+**Q3. Where is GCD used in cryptography?**
+👉 Checking coprime numbers
+
+---
+
+## 5️⃣ **Extended Euclidean Algorithm**
+
+### **Basics**
+
+* Extension of Euclid’s algorithm
+* Finds integers `x` and `y` such that:
+  `ax + by = gcd(a, b)`
+* Used to find **modular inverse**
+
+---
+
+### **Viva Questions (Extended Euclid)**
+
+**Q1. What extra does extended Euclid give?**
+👉 Values of `x` and `y`
+
+**Q2. When does modular inverse exist?**
+👉 When `gcd(a, b) = 1`
+
+**Q3. Where is it used?**
+👉 RSA private key generation
+
+---
+
+## 🔥 MOST COMMON FINAL VIVA QUESTIONS
+
+**Q. Difference between RSA and Diffie–Hellman?**
+👉 RSA is for **encryption**, DH is for **key exchange**
+
+**Q. Why prime numbers are important in cryptography?**
+👉 They ensure mathematical hardness
+
+**Q. Which algorithm is fastest here?**
+👉 Euclid’s algorithm
+
+**Q. Which algorithm is probabilistic?**
+👉 Miller–Rabin

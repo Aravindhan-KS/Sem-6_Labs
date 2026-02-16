@@ -1,0 +1,4 @@
+	[s2023103034@sflinuxonline 26.01.2026-23:39:48 - /Jan27]$ vi obs.l                                                                                                 
+	[s2023103034@sflinuxonline 26.01.2026-23:41:07 - /Jan27]$ flex obs.l                                                                                               
+	[s2023103034@sflinuxonline 26.01.2026-23:41:10 - /Jan27]$ gcc lex.yy.c                                                                                             
+	[s2023103034@sflinuxonline 26.01.2026-23:41:11 - /Jan27]$ ./a.out < code.txt 

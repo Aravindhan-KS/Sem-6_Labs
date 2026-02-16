@@ -1,0 +1,2 @@
+//coments
+#define Square(x)  ((x)*(x))

@@ -1,0 +1,5 @@
+int Square(int x) { return ((x)*(x)); }
+int Area_of_Square(int s) { return ((s)*(s)); }
+int Area_of_Rect(int l, int b) { return ((l)*(b)); }
+int Area_of_Circle(int r) { return (3.14*(r)*(r)); }
+

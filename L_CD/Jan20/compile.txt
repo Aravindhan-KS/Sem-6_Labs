@@ -1,0 +1,3 @@
+flex macro_to_function.l
+gcc lex.yy.c -o macro
+./macro < code.txt
