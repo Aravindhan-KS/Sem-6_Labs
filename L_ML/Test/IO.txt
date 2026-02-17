@@ -1,0 +1,29 @@
+Linear Regression – Continuous input features, Continuous output (target)
+Multiple Linear Regression – Multiple continuous input features, Continuous output
+Logistic Regression – Continuous or categorical input features, Categorical output (binary or multiclass)
+Decision Tree – Continuous and/or categorical input features, Continuous (regression tree) or Categorical (classification tree) output
+Naive Bayes – Continuous (Gaussian NB) or Categorical (Multinomial/Bernoulli NB) input features, Categorical output
+Random Forest – Continuous and/or categorical input features, Continuous (regression) or Categorical (classification) output
+
+
+Install Packages Locally in a Project (Repo)
+
+Step 1: Go inside your project folder - cd your-project-folder
+Step 2: Create Virtual Environment - python3 -m venv venv
+Step 3: Activate It - Linux - source venv/bin/activate
+Step 4: Install Packages (Local Only) - pip install numpy pandas scikit-learn matplotlib
+
+
+Install Packages Globally in Linux
+
+Method 1 (Using pip)
+pip install numpy
+
+If permission denied:
+sudo pip install numpy
+
+Method 2 (Recommended for Linux System Python)
+sudo apt install python3-numpy
+Example:
+sudo apt install python3-pandas
+sudo apt install python3-sklearn
