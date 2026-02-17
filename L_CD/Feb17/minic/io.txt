@@ -1,0 +1,136 @@
+Below are **sample inputs and corresponding outputs** for your mini Lex–Yacc program.
+
+---
+
+# ✅ 1️⃣ Sample Valid Program
+
+### 🔹 Input
+
+```c
+int a,b;
+float x;
+
+a = 5;
+b = a + 3;
+x = 2.5;
+```
+
+### 🔹 Output
+
+```
+Valid Program
+
+Symbol Table:
+Identifier      Type    Offset
+a               int     0
+b               int     4
+x               float   8
+```
+
+---
+
+# ✅ 2️⃣ Valid Program with Expressions
+
+### 🔹 Input
+
+```c
+int a;
+float b;
+
+a = 10;
+b = 5.5;
+```
+
+### 🔹 Output
+
+```
+Valid Program
+
+Symbol Table:
+Identifier      Type    Offset
+a               int     0
+b               float   4
+```
+
+---
+
+# ❌ 3️⃣ Undeclared Variable Error
+
+### 🔹 Input
+
+```c
+int a;
+b = 5;
+```
+
+### 🔹 Output
+
+```
+Error: Variable b not declared
+
+Invalid Program
+
+Symbol Table:
+Identifier      Type    Offset
+a               int     0
+```
+
+---
+
+# ❌ 4️⃣ Type Mismatch Error
+
+### 🔹 Input
+
+```c
+int a;
+float b;
+
+a = 5.5;
+```
+
+### 🔹 Output
+
+```
+Type Mismatch in assignment to a
+
+Invalid Program
+
+Symbol Table:
+Identifier      Type    Offset
+a               int     0
+b               float   4
+```
+
+---
+
+# ❌ 5️⃣ Redeclaration Error
+
+### 🔹 Input
+
+```c
+int a;
+int a;
+```
+
+### 🔹 Output
+
+```
+Error: Redeclaration of a
+
+Invalid Program
+
+Symbol Table:
+Identifier      Type    Offset
+a               int     0
+```
+
+---
+
+If you want, I can also give:
+
+• Combined example with multiple errors
+• Step-by-step dry run
+• Output format simplified for record writing
+• Viva explanation points
+
+Just tell 👍

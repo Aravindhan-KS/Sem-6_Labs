@@ -1,0 +1,5 @@
+flex mini.l
+yacc -d mini.y
+gcc y.tab.c lex.yy.c
+./a.out < input.txt   -> Correct Test Case
+./a.out < input1.txt  -> Incorrect Test Case
