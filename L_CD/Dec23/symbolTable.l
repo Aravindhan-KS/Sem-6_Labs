@@ -4,7 +4,7 @@
 
 char symtab[100][50];
 int count = 0;
-
+//ctrl+d to eof
 void add(char *id) {
     for(int i = 0; i < count; i++) {
         if(strcmp(symtab[i], id) == 0)

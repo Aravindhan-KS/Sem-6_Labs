@@ -1,0 +1,35 @@
+Week - 1  
+    - Ceaser
+        - Input Text : SECURITY    
+        - Shift : 3
+    - Mono
+        - Input Text : INFORMATION
+    - Playfair 
+        - Key : MONARCHY
+        - PT : INSTRUMENTS
+
+Week - 4
+g++ des.cpp -o des -lssl -lcrypto
+    - DES
+        - 8 Bytes(character) limit for both key and PT
+    - AES 
+        - | Parameter   | Required Length  |
+          | Plaintext   | Exactly 16 bytes |
+          | AES-128 Key | 16 bytes         |
+          | AES-192 Key | 24 bytes         |
+          | AES-256 Key | 32 bytes         |
+
+Week - 5 
+    - RC4
+        - PT : HELLO
+        - Key : KEY
+
+Week - 6 
+    - RSA 
+        - first 2 prime nos input
+        - third message (number)
+    - DFKE
+        - first 2 prime nos
+        - next 2 private keys
+    - MRPT
+        - Check for prime or composite
